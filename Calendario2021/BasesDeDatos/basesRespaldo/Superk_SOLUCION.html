@@ -1,0 +1,155 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+    
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+    
+  <meta name="Author" content="Lizethe P&eacute;rez Fuertes">
+    
+  <meta name="GENERATOR"
+ content="Mozilla/4.79 [en] (WinNT; U) [Netscape]">
+  <title>M_Semana1</title>
+</head>
+  <body>
+ &nbsp; <br>
+&nbsp; 
+<center>
+<table border="1" cols="1" width="100%">
+ <tbody>
+    <tr>
+ <td> 
+      <table border="0" cols="2" width="100%">
+ <tbody>
+          <tr>
+ <td width="56%"> 
+            <div align="right"><b><font face="Arial,Helvetica"><font
+ color="#663366">Soluci&oacute;n de la base de datos " SuperK "</font></font></b></div>
+ </td>
+  <td><img src="database5.jpg" height="140" width="168">
+            </td>
+ </tr>
+ 
+        </tbody>
+      </table>
+ </td>
+ </tr>
+  <tr bgcolor="#663366">
+ <td>.</td>
+ </tr>
+  <tr>
+ <td><img src="iobj.jpg" height="70" width="70" align="left">
+ <br>
+      <b><font face="Arial,Helvetica"><font color="#663366">&nbsp;Objetivo:</font></font></b> 
+      <br>
+&nbsp; 
+      <ul>
+ 
+        <ul>
+ <li> <font face="Arial,Helvetica"><font color="#333333"><font size="-1">El
+alumno ser&aacute; capaz de construir diagramas entidad-relaci&oacute;n.</font></font></font></li>
+ 
+        </ul>
+ 
+      </ul>
+  
+      <ul>
+        <font face="Arial,Helvetica"><font color="#ffffff"><font
+ size="-1">.</font></font></font>
+      </ul>
+ </td>
+ </tr>
+  <tr>
+ <td><img src="iinstruct.jpg" height="60" width="60" align="left">
+ <br>
+      <b><font face="Arial,Helvetica"><font color="#663366">&nbsp;&nbsp; Instrucciones:</font></font></b> 
+      <br>
+&nbsp; 
+      <ul>
+ 
+        <ul>
+          <font face="Arial,Helvetica"><font size="-1"><font
+ color="#333333">Realiza el diagrama entidad-relaci&oacute;n de la informaci&oacute;n
+que desea almacenar la empresa "<b>SuperK</b>&#8220;. Identificar entidades, atributos, 
+campos llave y tipo de relaciones. </font><font color="#000000">Puedes revisar
+la presentaci&oacute;n vista en clase <a
+ href="../Presentaciones/7_BasesDeDatos.pptx"><b><u>7. Bases de datos.pptx</u></b>
+          </a>por si requieres ayuda para realizar tu diagrama entidad -
+relaci&oacute;n.</font></font></font> <br>
+&nbsp; <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">La empresa "SuperK" necesita una base de datos para administrar
+su informaci&oacute;n. La empresa tiene varios clientes, de los cuales guarda
+informaci&oacute;n como su RFC, nombre, direcci&oacute;n y tel&eacute;fono.</font></font></font></li>
+  <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">La empresa tambi&eacute;n guarda informaci&oacute;n de los vendedores,
+tales como su RFC, nombre, categor&iacute;a y estado civil.&nbsp;</font></font></font></li>
+  <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">Tambi&eacute;n se tiene un registro de las ciudades donde radican
+sus principales clientes, por lo que se almacena el c&oacute;digo y el nombre
+de la ciudad.&nbsp;</font></font></font></li>
+  <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">Por otra parte se tiene el registro de todos los productos que
+ofrece la empresa, por lo que se almacena el c&oacute;digo del producto,
+su nombre, clasificaci&oacute;n, precio al p&uacute;blico y ubicaci&oacute;n
+dentro de los distintos almacenes con los que cuenta la empresa.</font></font></font></li>
+  <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">Tambi&eacute;n se tiene un registro de sus proveedores, por lo
+que se almacena el RFC del proveedor, su nombre y tel&eacute;fono. La empresa
+"SuperK" necesita administrar informaci&oacute;n entre los proveedores y
+los productos que surte, como el costo, ya que el costo de los productos
+puede variar por proveedor. Por ejemplo, el proveedor SAMs puede surtir el
+detergente Roma a 10 pesos y el proveedor COSTCO puede surtir este mismo
+producto a 11.50 pesos.</font></font></font></li>
+  <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">Finalmente, la empresa tiene un registro de las facturas de venta
+de sus clientes. Cada factura de venta almacena el n&uacute;mero de factura,
+la fecha, los productos vendidos y la cantidad vendida de cada uno.&nbsp;</font></font></font></li>
+  <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">Cada cliente solo puede ser surtido por un solo vendedor, pero
+un vendedor puede surtir a varios clientes. Cada cliente radica en una ciudad,
+pero en una ciudad se pueden tener varios clientes. Un proveedor puede surtir
+varios productos y un producto puede ser surtido por distintos proveedores.
+En una factura se puede tener el registro de venta de uno o varios productos,
+y un mismo producto puede ser vendido en distintas facturas. Un cliente puede
+tener varias facturas, pero una factura es de un solo cliente.&nbsp;</font></font></font></li>
+ 
+        </ul>
+ <font face="Arial,Helvetica"><font color="#ffffff"><font size="-1">...</font></font></font>
+      </ul>
+ </td>
+ </tr>
+  <tr bgcolor="#663366">
+ <td> 
+      <ul>
+ 
+        <center><b><font face="Arial,Helvetica"><font color="#ffffff">MODELO
+ENTIDAD - RELACI&Oacute;N</font></font></b></center>
+ 
+      </ul>
+ </td>
+ </tr>
+  <tr>
+ <td> 
+      <center><img src="image7I9.JPG" height="466" width="616">
+      </center>
+ </td>
+ </tr>
+  <tr bgcolor="#663366">
+ <td> 
+      <center><b><font face="Arial,Helvetica"><font color="#ffffff">CONVERSI&Oacute;N 
+DEL MODELO ENTIDAD RELACI&Oacute;N A TABLAS</font></font></b></center>
+ </td>
+ </tr>
+  <tr>
+ <td> 
+      <center><img src="imageMS0.JPG" height="464" width="705">
+      </center>
+ </td>
+ </tr>
+ 
+  </tbody>
+</table>
+</center>
+ <font color="#ffffff">.</font> <br>
+</body>
+</html>

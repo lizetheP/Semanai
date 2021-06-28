@@ -1,0 +1,189 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+                                
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+                                
+  <meta name="Author" content="Lizethe P&eacute;rez Fuertes">
+                                
+  <meta name="GENERATOR"
+ content="Mozilla/4.79 [en] (WinNT; U) [Netscape]">
+  <title>Base de datos</title>
+  <style type="text/css">
+.auto-style1 {
+	font-weight: bold;
+	border-style: solid;
+	border-width: 1px;
+}
+</style>
+</head>
+  <body>
+        
+<center>
+<table cols="1" width="90%" class="auto-style1">
+        <tbody>
+           <tr>
+        <td bgcolor="#663366">                                          
+       
+      <center><font color="#ffffff" face="Arial,Helvetica">Soluci&oacute;n
+  de la base de datos. " Super k "</font></center>
+        </td>
+        </tr>
+                             
+  </tbody>       
+</table>
+       </center>
+                
+<center>       
+<table border="1" width="90%">
+        <tbody>
+           <tr>
+        <td valign="top">                                               
+  
+      <center><font color="#ffffff">.</font> <br>
+             <img src="super.png" height="175" width="182" alt="">
+             <font color="#663366"></font>                              
+                   
+      <p><big><b><font face="Arial,Helvetica"><font color="#663366"><font
+ size="-1"><big>" Super k "</big></font></font></font></b></big></p>
+             </center>
+        </td>
+         <td>                             
+      <blockquote>                   <small><font color="#000066"><big><b><font
+ size="-1" face="Helvetica, Arial, sans-serif"><br>
+  Descripci&oacute;n de la informaci&oacute;n:</font></b></big></font></small><br>
+            <small><font color="#000066"><big><b><font size="-1"
+ face="Helvetica, Arial, sans-serif">            </font></b></big></font></small><br>
+       <font face="Arial,Helvetica" color="#333333"><font size="-1">La empresa
+   "SuperK" necesita una base de datos para administrar su informaci&oacute;n.
+             </font></font><br>
+            <ul>
+                  <li><font
+ size="-1" color="#333333" face="Arial,Helvetica">La empresa tiene varios <b>clientes</b>, de los cuales guarda
+informaci&oacute;n como su RFC, nombre, direcci&oacute;n y tel&eacute;fono.</font><font
+ color="#333333">&nbsp;</font></li>
+                  <li>                                                  
+                               
+            <div align="justify"><font face="Arial,Helvetica"
+ color="#333333"><font size="-1">La empresa tambi&eacute;n guarda informaci&oacute;n
+   de los <b>vendedores</b>, tales como su RFC, nombre, categor&iacute;a
+y  estado  civil.&nbsp;</font></font><font color="#333333"> </font><font
+ face="Arial,Helvetica" color="#333333"><font size="-1">Tambi&eacute;n se
+   tiene un registro de las <b>ciudades</b> donde radican sus principales
+clientes,   por lo que se almacena el c&oacute;digo y el nombre de la ciudad.&nbsp;</font></font><font
+ color="#333333">&nbsp;</font></div>
+                  </li>
+                  <li>                                                  
+                               
+            <div align="justify"><font face="Arial,Helvetica"
+ color="#333333"><font size="-1">Por otra parte se tiene el registro de todos
+   los <b>productos</b> que ofrece la empresa, por lo que se almacena el
+c&oacute;digo    del producto, su nombre, clasificaci&oacute;n, precio al
+p&uacute;blico  y  ubicaci&oacute;n dentro de los distintos almacenes con
+los que cuenta la empresa.</font></font><font color="#333333">&nbsp;</font></div>
+                  </li>
+                  <li>                                                  
+                               
+            <div align="justify"><font face="Arial,Helvetica"
+ color="#333333"><font size="-1">Tambi&eacute;n se tiene un registro de sus
+                 <b>proveedores</b>, por lo que se almacena el RFC del proveedor,
+   su nombre y tel&eacute;fono. <u>La empresa "SuperK" necesita administrar
+  informaci&oacute;n entre los proveedores y los productos que surte, como
+ el costo, ya que el costo de los productos puede variar por proveedor. Por
+ ejemplo, el proveedor SAMs puede surtir el detergente Roma a 10 pesos y
+el  proveedor COSTCO puede surtir este mismo producto a 11.50 pesos.</u></font></font><font
+ color="#333333">&nbsp;</font></div>
+                  </li>
+                  <li>                                                  
+                               
+            <div align="justify"><font face="Arial,Helvetica"
+ color="#333333"><font size="-1">Finalmente, la empresa tiene un registro
+   de las <b>facturas de venta</b> de sus clientes. Cada factura de venta
+almacena   el n&uacute;mero de factura, la fecha,</font></font><font
+ face="Arial,Helvetica" color="#333333"><font size="-1"> el c&oacute;digo
+de los productos vendidos</font></font><font face="Arial,Helvetica"
+ color="#333333"><font size="-1"> y la cantidad   vendida de cada uno.&nbsp;</font></font></div>
+                  </li>
+                                                               
+        </ul>
+                                                               
+        <div align="justify"><small><font color="#000066"><big><b><font
+ size="-1" face="Helvetica, Arial, sans-serif">Descripci&oacute;n de las
+relaciones:</font></b></big></font></small></div>
+                                                               
+        <ul>
+                  <li> <font face="Arial,Helvetica" color="#333333"><font
+ size="-1">Cada <b>cliente</b> solo puede ser surtido por un solo<b> vendedor</b>,
+   pero un vendedor puede surtir a varios clientes.&nbsp;</font></font></li>
+                  <li>                                                  
+                               
+            <div align="justify"><font face="Arial,Helvetica"
+ color="#333333"><font size="-1">Cada <b>cliente</b> radica en una<b> ciudad</b>, 
+   pero en una ciudad se pueden tener varios clientes.&nbsp;</font></font></div>
+                  </li>
+                  <li>                                                  
+                               
+            <div align="justify"><font face="Arial,Helvetica"
+ color="#333333"><font size="-1">Un <b>proveedor</b> puede surtir varios
+              <b>productos</b> y un producto puede ser surtido por distintos
+   proveedores.&nbsp;</font></font></div>
+                  </li>
+                  <li>                                                  
+                               
+            <div align="justify"><font face="Arial,Helvetica"
+ color="#333333"><font size="-1">En una <b>factura</b> se puede tener el
+              <b>registro de venta</b> de uno o varios productos, y un mismo
+   producto puede ser vendido en distintas facturas.&nbsp;</font></font></div>
+                  </li>
+                  <li><font face="Arial,Helvetica" color="#333333"><font
+ size="-1">Un <b>cliente</b> puede tener varias<b> facturas</b>, pero una
+   factura es de un solo cliente.&nbsp;</font></font></li>
+                                       
+        </ul>
+          </blockquote>
+			   </td>
+        </tr>
+                             
+  </tbody>       
+</table>
+       </center>
+             
+<center>     
+<table border="1" cols="1" width="90%">
+      <tbody>
+                     <tr bgcolor="#663366">
+      <td bgcolor="#336666">                                    
+      <ul>
+                                       
+        <center><b><font face="Arial,Helvetica"><font color="#ffffff">MODELO 
+  ENTIDAD - RELACI&Oacute;N</font></font></b></center>
+                               
+      </ul>
+      </td>
+      </tr>
+       <tr>
+      <td>                                    
+      <center><img src="image7I9.JPG" height="466" width="616" alt="">
+           </center>
+      </td>
+      </tr>
+       <tr bgcolor="#663366">
+      <td bgcolor="#336666">                                    
+      <center><b><font face="Arial,Helvetica"><font color="#ffffff">CONVERSI&Oacute;N
+   DEL MODELO ENTIDAD RELACI&Oacute;N A TABLAS</font></font></b></center>
+      </td>
+      </tr>
+       <tr>
+      <td>                                    
+      <center><img src="imageMS0.JPG" height="464" width="705" alt="">
+           </center>
+      </td>
+      </tr>
+                     
+  </tbody>     
+</table>
+     </center>
+    
+</body>
+</html>

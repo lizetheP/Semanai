@@ -1,0 +1,653 @@
+﻿<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+                                
+ 
+    <meta content="es-mx" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>M_Semana1</title>
+	<style type="text/css">
+  
+
+
+
+
+
+
+
+
+
+
+  .auto-style4 {
+	color: #0000FF;
+}
+
+
+
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  *{box-sizing:inherit}
+  
+
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+  <body>
+<center>
+<table border="1" cols="1" width="100%">
+        <tbody>
+           <tr>
+        <td>                                                  
+      <table border="0" cols="2" width="100%">
+        <tbody>
+                 <tr>
+        <td width="58%">                                                
+                                           
+            <div align="right"><b><font face="Arial,Helvetica"><font
+ color="#663366"><font size="+1">Laboratorio 6.&nbsp; ACCESS Consultas e Informes&nbsp;</font></font></font></b></div>
+        </td>
+         <td><img src="imageCNR.JPG" height="119" width="122">
+                   </td>
+        </tr>
+                                                                       
+        </tbody>                                                 
+      </table>
+        </td>
+        </tr>
+         <tr bgcolor="#663366">
+        <td>.</td>
+        </tr>
+         <tr>
+        <td><img src="iobj.jpg" height="70" width="70" align="left">
+        <br>
+             <b><font face="Arial,Helvetica"><font color="#663366">&nbsp;Objetivos:</font></font></b>
+          <br>
+        &nbsp;                                                  
+      <ul>
+               <font face="Arial,Helvetica"><font size="-1">&nbsp;&nbsp;&nbsp;
+           <font color="#333333">El alumno será capaz de:</font></font></font>
+           <br>
+       		&nbsp;                                                           
+    
+        <ul>
+        <li> <font face="Arial,Helvetica"><font color="#333333"><font
+ size="-1">Crear consultas avanzadas</font></font></font></li>
+         <li> <font face="Arial,Helvetica"><font color="#333333"><font
+ size="-1">Diseñar consultas con <b>campos calculados (cálculos de totales)</b></font></font></font></li>
+         <li> <font face="Arial,Helvetica"><font color="#333333"><font
+ size="-1">Crear y personalizar informes</font></font></font></li>
+         <li> <font face="Arial,Helvetica"><font color="#333333"><font
+ size="-1">Crear informes <b>con un nivel de agrupamiento</b></font></font></font></li>
+                                                                       
+        </ul>
+                                
+      </ul>
+        </td>
+        </tr>
+         <tr>
+        <td><img src="iinstruct.jpg" height="60" width="60" align="left">
+        <br>
+             <b><font face="Arial,Helvetica"><font color="#663366">&nbsp;&nbsp;&nbsp; 
+		Instrucciones:</font></font></b>        <br>
+        &nbsp;                                                  
+      <ul>
+                                                                       
+        <ul>
+        <li> <font face="Arial,Helvetica"><font color="#333333"><font
+ size="-1">Crea dentro de la unidad d:/ de tu computadora una carpeta con tu 
+		matrícula.</font></font></font></li>
+         <li> <font face="Arial,Helvetica"><font color="#333333"><font
+ size="-1">Guarda en esa carpeta la base de datos <b><a
+ href="LaHuertaC3_matricula.accdb">LaHuertaC3_matricula.accdb</a></b> con tu 
+		 matrícula.</font></font></font></li>
+         <li> <font face="Arial,Helvetica"><font color="#333333"><font
+ size="-1">Realiza la lectura de los capítulos:</font></font></font></li>
+                                                                        
+             
+          <ul>
+        <li> <b><font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1"><a href="../Access_Capitulo3_Consultas.docx">Capítulo 3. Consultas</a></font></font></font></b></li>
+         <li> <b><font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1"><a href="../Access_Capitulo6_Informes.docx">Capítulo 6. Informes</a></font></font></font></b></li>
+                                                                        
+           
+          </ul>
+                                                                       
+        </ul>
+             
+      </ul>
+        </td>
+        </tr>
+         <tr>
+        <td>                                                  
+      <blockquote><b><font face="Arial,Helvetica"><font color="#ffffff"><font
+ size="-1">.</font></font></font></b> <b>
+		  <font color="#0000ff" face="Arial,Helvetica"><br>&nbsp;1. Consulta de 
+		  notas de venta (Consulta con campos calculados)</font></b></blockquote>
+                                                          
+      <ul>
+                                                                       
+        <ul>
+        <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">La frutería y verdulería "La Huerta" necesita generar un informe de 
+		cada nota de venta de sus clientes, por lo que se te pide crees una 
+		consulta donde se despliegue la siguiente información. 
+           <b>NOTA:</b>  El campo <b>Total </b>se crea en la consulta no se 
+		encuentra en ninguna tabla.</font></font><font color="#ffffff"><font
+ size="-2">.</font></font></font></li>
+                                                                       
+        </ul>
+                                                         
+      </ul>
+                                                          
+      <center><img src="img5.gif">
+          </center>
+                                                          
+      <ul>
+                                                                       
+        <ul>
+        <li> <font face="Arial,Helvetica"><font size="-1">Ordena la información 
+		en forma descentente por <b>Fecha </b>y en forma ascendente por<b> 
+		Nombre del producto</b>.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Crea un campo 
+		 calculado con el nombre de <b>Total</b> donde realices la 
+		 multiplicación de los campos <b>Precio </b>por <b>Cantidad</b>.</font></font></li>
+                                                                       
+        </ul>
+        <b><font face="Arial,Helvetica"><font color="#ffffff"><font
+ size="-1">.</font></font></font></b>                                    
+                            
+        <ul>
+                 <b><font face="Arial,Helvetica"><font color="#ff0000"><font
+ size="-1">nombre del campo : expresión aritmética</font></font></font></b>
+                                                                        
+       
+          <p><b><font face="Arial,Helvetica"><font size="-1"><i><font
+ color="#3333ff">nombre</font></i><font color="#ff0000"> :</font> <font
+ color="#ff0000">[ </font><i><font color="#3333ff">campo1</font></i><font
+ color="#ff0000">] + [ </font><i><font color="#3333ff">campo2</font></i><font
+ color="#ff0000">]</font></font></font></b> <br>
+                 <b><font size="-1"><font face="Arial,Helvetica"><i><font
+ color="#3333ff">nombre</font></i><font color="#ff0000"> :</font> <font
+ color="#ff0000">[ </font><i><font color="#3333ff">campo1</font></i><font
+ color="#ff0000">] </font></font><font color="#ff0000"><font
+ face="Times New Roman,Times">*</font><font face="Arial,Helvetica"> [ </font></font><font
+ face="Arial,Helvetica"><i><font color="#3333ff">campo2</font></i><font
+ color="#ff0000">] - [ </font><i><font color="#3333ff">campo3</font></i><font
+ color="#ff0000">]</font></font></font></b> <br>
+                 <b><font face="Arial,Helvetica"><font size="-1"><i><font
+ color="#3333ff">nombre</font></i><font color="#ff0000"> :</font> <font
+ color="#ff0000">[ </font><i><font color="#3333ff">campo1</font></i><font
+ color="#ff0000">] /&nbsp; [ </font><i><font color="#3333ff">campo2</font></i><font
+ color="#ff0000">]</font></font></font></b> <br>
+                 <font color="#ffffff"><font size="-2">.</font></font></p>
+                                                                     
+        </ul>
+                                                                        
+        <ul>
+        <li> <font face="Arial,Helvetica"><font size="-1">Guarda la consulta 
+		como<b>              <font color="#3366ff">Consulta de notas</font></b></font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Checa los datos 
+		 resultados de tu consulta, dando clic en <b>Ver &gt; Vista Hoja de datos</b></font></font></li>
+                                                                       
+        </ul>
+                                                         
+      </ul>
+                                                          
+      <blockquote>&nbsp; <br>
+               <b><font face="Arial,Helvetica"><font color="#3333ff"><font
+ size="-1">&nbsp; </font></font><font color="#0000ff">2. Informe de notas de venta 
+		  (Informe agrupado por nota de venta)</font></font></b></blockquote>
+                                                          
+      <ul>
+                                                                       
+        <ul>
+        <li> <font face="Arial,Helvetica"><font size="-1">Utiliza la <b>consulta 
+		de notas </b>para generar un informe como se muestra en la imagen.</font></font></li>
+                                                                       
+        </ul>
+                                                         
+      </ul>
+                                                          
+      <center><img src="img7.gif">
+             </center>
+                                                          
+      <ul>
+                                                                       
+        <ul>
+        <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">Debes agrupar la información por<b> ID_Nota, Fecha, Nombre del 
+		cliente</b> y <b>Tipo de pago</b>. En el botón de <b>Opciones de 
+		agrupamiento:</b> selecciona <b>Normal              </b>en<b> Intervalos 
+		de agrupamiento</b> para todos los campos.</font></font></font></li>
+         <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">Ordena la información en forma ascendentemente por <b>Nombre del 
+		 producto</b>. En el botón de <b>Opciones de resumen</b>: el informe 
+		 deberá realizar la <b>suma</b> del campo <b>Total</b> por cada factura 
+		 del cliente.</font></font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Distribución: 
+               <b>Esquema </b>y Orientación: <b>Vertical</b></font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1"><font
+ color="#000000">El título del informe deberá ser: </font><b><font
+ color="#3333ff">Notas de venta</font></b><font color="#000000">.</font></font></font></li>
+         <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">Del menú, da clic en el botón de <b>Cerrar vista previa de impresión</b>, 
+		 para que muestre el informe en <b>Vista diseño</b>.</font></font></font></li>
+         <img height="69" src="img3.gif" width="100">
+              <br>
+    <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">En la sección de <b><i>Encabezado ID_Nota</i></b>, cambia el nombre 
+	de las etiquetas para que se vean como se muestra en la imagen.</font></font></font></li>
+         <li><font face="Arial,Helvetica"><font size="-1"><font
+ color="#000000">En la sección de <b>Pie Tipo de pago </b>elimina la caja de 
+		 texto<b> </b></font><font color="#3333ff"><font color="#3366ff"><i><font
+ face="Helvetica, Arial, sans-serif">"</font></i></font></font></font></font><font
+ color="#3366ff"><i><font face="Helvetica, Arial, sans-serif" size="-1">="Resumir 
+		 por " &amp; "'Tipo de pago' = " &amp; " " &amp; [Tipo de pago] &amp; " (" &amp; Cuenta(*) &amp; 
+		 " " &amp; SiInm(Cuenta(*)=1,"registro de detalle","registros de detalle") &amp; 
+		 ")"</font></i></font></li>
+               <li> <font face="Arial,Helvetica"><font size="-1"><font
+ color="#000000">En la sección de <b>Pie Clientes.Nombre </b>elimina la caja de 
+			   texto</font><i><font color="#3333ff"><b>=</b>"Resumir por " &amp; 
+			   "'Clientes.Nombre' = " &amp; " " &amp; [Clientes.Nombre] &amp; " (" &amp; 
+			   Cuenta(*) &amp; " " &amp; SiInm(Cuenta(*)=1,"registro de 
+			   detalle","registros de detalle") &amp; ")".</font></i><font color="#000000"><b> </b>
+			   Elimina también la etiqueta y el cuadro de texto de <b>Suma</b>.</font></font></font></li>
+               <li><font face="Arial,Helvetica"><font size="-1"><font
+ color="#000000">En la sección de <b>Pie Fecha </b>elimina la caja de texto<b> </b></font><font color="#3333ff"><b>
+			   =</b><i>"Resumir por " &amp; "'Fecha' = " &amp; " " &amp; [Fecha] &amp; " (" &amp; 
+			   Cuenta(*) &amp; " " &amp; SiInm(Cuenta(*)=1,"registro de 
+			   detalle","registros de detalle") &amp; ")"</i></font></font></font></li>
+             <li> <font face="Arial,Helvetica"><font size="-1"><font
+ color="#000000">En la sección de <b>Pie ID_Nota </b>elimina la caja de texto<b> </b></font><i><font color="#3333ff">
+			 ="Resumir por " &amp; "'ID_Nota' = " &amp; " " &amp; [ID_Nota] &amp; " (" &amp; 
+			 Cuenta(*) &amp; " " &amp; SiInm(Cuenta(*)=1,"registro de 
+			 detalle","registros de detalle") &amp; ")" .</font></i><font color="#000000"> 
+			 Elimina también la etiqueta y el cuadro de texto de <b>Suma</b>.</font></font></font></li>
+         <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">En la sección de <b>Pie Tipo de pago</b> inserta:</font></font></font></li>
+                                                                        
+             
+          <ul>
+        <li> <font face="Arial,Helvetica"><font size="-1"><font
+ color="#000000">Un               <b>cuadro de texto</b> con el título<b>
+   	 IVA</b> y escribe la fórmula para calcular el IVA del la suma del Total de 
+		la factura&nbsp; ( </font><b><font color="#ff0000">=Suma([Total]) * 0.16</font></b><font color="#000000"> 
+		).</font></font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1"><font
+ color="#000000">Un <b>cuadro de texto</b> con el título <b>TOTAL</b> 
+   	  y escribe la fórmula para calcular el Total a pagar de la factura&nbsp;&nbsp; ( </font><b><font color="#ff0000">
+		 =Suma([Total]) * 1.16</font></b><font
+ color="#000000">&nbsp; ).</font></font></font></li>
+                                                                        
+           
+          </ul>
+         <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">Ajusta el tamaño y distribución de todos los controles (cuadros de 
+		 texto y etiquetas), de tal forma que se vean como se presenta en la 
+		 imagen.</font></font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Alinea el contenido 
+		 de los cuadros de texto y etiquetas de la mejor forma (izquierda / <strong>
+		 centrado</strong> 
+   	  / derecha)</font></font></li>
+                                                                       
+        </ul>
+                                                         
+      </ul>
+                                                          
+      <center><img src="img10.gif">
+             </center>
+                                                          
+      <ul>
+                                                                       
+        <ul>
+        <li> <font face="Arial,Helvetica"><font size="-1">Cambia el diseño de tu 
+		informe. Puedes cambiar también el <b>color </b>y el<b> tipo de letra</b> 
+		que más te agrade.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Checa tu informe, 
+		 dando clic en <b>Ver &gt; Vista Informes.</b></font></font></li>
+                                                                       
+        </ul>
+                                                         
+      </ul>
+                                                          
+      <hr width="100%">                                   
+      <blockquote><b><font face="Arial,Helvetica"><font color="#0000ff">3. 
+		  Consulta de Facturas (Consulta con campos calculados)</font></font></b></blockquote>
+                                                          
+      <ul>
+                                                 
+        <ul>
+               <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">La frutería y verdulería "La Huerta" necesita generar un informe de 
+			   cada factura de compra a sus proveedores, por lo que se te pide 
+			   crees una consulta donde se despliegue la siguiente información. 
+             <b>NOTA:</b> El campo <b>Total </b>se crea en la consulta no se 
+			   encuentra en ninguna tabla.</font></font><font color="#ffffff"><font
+ size="-2">.</font></font></font></li>
+                                                 
+        </ul>
+                                       
+      </ul>
+                                                          
+      <center><img src="img4.gif">
+             </center>
+                                                          
+      <ul>
+                                                 
+        <ul>
+               <li> <font face="Arial,Helvetica"><font size="-1">Ordena la 
+			   información en forma ascentente por <b>Fecha </b>y en forma 
+			   ascendente por<b> Nombre del producto</b>.</font></font></li>
+               <li> <font face="Arial,Helvetica"><font size="-1">Crea un campo 
+			   calculado con el nombre de <b>Total</b> donde realices la 
+			   multiplicación de los campos <b>Costo </b>por <b>Cantidad</b>.</font></font></li>
+                                                 
+        </ul>
+             <b><font face="Arial,Helvetica"><font color="#ffffff"><font
+ size="-1">.</font></font></font></b>                                    
+       
+        <ul>
+               <b><font face="Arial,Helvetica"><font color="#ff0000"><font
+ size="-1">nombre del campo : expresión aritmética</font></font></font></b> 
+                                                        
+          <p><b><font face="Arial,Helvetica"><font size="-1"><i><font
+ color="#3333ff">nombre</font></i><font color="#ff0000"> :</font> <font
+ color="#ff0000">[ </font><i><font color="#3333ff">campo1</font></i><font
+ color="#ff0000">] + [ </font><i><font color="#3333ff">campo2</font></i><font
+ color="#ff0000">]</font></font></font></b> <br>
+                 <b><font size="-1"><font face="Arial,Helvetica"><i><font
+ color="#3333ff">nombre</font></i><font color="#ff0000"> :</font> <font
+ color="#ff0000">[ </font><i><font color="#3333ff">campo1</font></i><font
+ color="#ff0000">] </font></font><font color="#ff0000"><font
+ face="Times New Roman,Times">*</font><font face="Arial,Helvetica"> [ </font></font><font
+ face="Arial,Helvetica"><i><font color="#3333ff">campo2</font></i><font
+ color="#ff0000">] - [ </font><i><font color="#3333ff">campo3</font></i><font
+ color="#ff0000">]</font></font></font></b> <br>
+                 <b><font face="Arial,Helvetica"><font size="-1"><i><font
+ color="#3333ff">nombre</font></i><font color="#ff0000"> :</font> <font
+ color="#ff0000">[ </font><i><font color="#3333ff">campo1</font></i><font
+ color="#ff0000">] /&nbsp; [ </font><i><font color="#3333ff">campo2</font></i><font
+ color="#ff0000">]</font></font></font></b> <br>
+                 <font color="#ffffff"><font size="-2">.</font></font></p>
+                                                 
+        </ul>
+                                                 
+        <ul>
+               <li> <font face="Arial,Helvetica"><font size="-1">Guarda la 
+			   consulta como<b>              <font color="#3366ff">Consulta de 
+			   facturas</font></b></font></font></li>
+               <li> <font face="Arial,Helvetica"><font size="-1">Checa los datos 
+			   resultados de tu consulta, dando clic en <b>Ver &gt; Vista Hoja de 
+			   datos</b></font></font></li>
+                                                 
+        </ul>
+                                       
+      </ul>
+		<blockquote><b><font face="Arial,Helvetica">
+			<font
+ size="-1" color="#3333ff">&nbsp; </font><font color="#0000ff">4. Informe de Facturas 
+			(Informe agrupado por factura)</font></font></b></blockquote>
+                                                          
+      <ul>
+                                                 
+        <ul>
+               <li> <font face="Arial,Helvetica"><font size="-1">Utiliza la 
+			   consulta de facturas para generar un informe como se muestra en 
+			   la imagen.</font></font></li>
+                                                 
+        </ul>
+                                       
+      </ul>
+                                                          
+      <center><img src="img6.gif">
+             </center>
+                                                          
+      <ul>
+                                                 
+        <ul>
+               <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">Debes agrupar la información por<b> ID_Factura, Fecha y Nombre del 
+			   proveedor</b>. En el botón de <b>Opciones de agrupamiento:</b>
+   			selecciona <b>Normal              </b>en<b> Intervalos de 
+			   agrupamiento</b>
+   			para todos los campos.</font></font></font></li>
+               <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">Ordena la información en forma ascendentemente por <b>Nombre del 
+			   producto</b>. En el botón de <b>Opciones de resumen</b>: el 
+			   informe deberá realizar la <b>suma</b> del campo <b>Total</b> por 
+			   cada factura del cliente.</font></font></font></li>
+               <li> <font face="Arial,Helvetica"><font size="-1">Distribución: 
+               <b>Esquema </b>y Orientación: <b>Vertical</b></font></font></li>
+               <li> <font face="Arial,Helvetica"><font size="-1"><font
+ color="#000000">El título del informe deberá ser: </font><b><font
+ color="#3333ff">Facturación</font></b><font color="#000000">.</font></font></font></li>
+               <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">Del menú, da clic en el botón de <b>Cerrar vista previa de impresión</b>, 
+			   para que muestre el informe en <b>Vista diseño</b>.</font></font></font></li>
+               <img src="img3.gif" height="69" width="100">
+               <br>
+    <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">En la sección de <b><i>Encabezado ID_Factura</i></b>, cambia el 
+	nombre de las etiquetas para que se vean como se muestra en la imagen.</font></font></font></li>
+     			<li> <font size="-1" face="Arial,Helvetica"><font
+ color="#000000">En la sección de <b>Pie Proveedores.Nombre </b>elimina la caja 
+				de texto</font><i><font color="#3333ff"><b>=</b>"Resumir por " &amp; 
+				"'Proveedores.Nombre' = " &amp; " " &amp; [Proveedores.Nombre] &amp; " (" &amp; 
+				Cuenta(*) &amp; " " &amp; SiInm(Cuenta(*)=1,"registro de 
+				detalle","registros de detalle") &amp; ")".</font></i><font color="#000000"><b> </b></font></font></li>
+               <li> <font face="Arial,Helvetica"><font size="-1"><font
+ color="#000000">En la sección de <b>Pie Fecha </b>elimina la caja de texto<b> </b></font><font color="#3333ff"><b>
+			   =</b><i>"Resumir por " &amp; "'Fecha' = " &amp; " " &amp; [Fecha] &amp; " (" &amp; 
+			   Cuenta(*) &amp; " " &amp; SiInm(Cuenta(*)=1,"registro de 
+			   detalle","registros de detalle") &amp; ")" <font color="#000000" face="Arial,Helvetica" size="-1">
+			   Elimina también la etiqueta y el cuadro de texto de <b>Suma</b>.</font></i></font></font></font></li>
+               <li> <font face="Arial,Helvetica"><font size="-1"><font
+ color="#000000">En la sección de <b>Pie ID_Factura </b>elimina la caja de texto<b> </b></font><i><font color="#3333ff">
+			   ="Resumir por " &amp; "'ID_Factura' = " &amp; " " &amp; [ID_Factura] &amp; " (" &amp; 
+			   Cuenta(*) &amp; " " &amp; SiInm(Cuenta(*)=1,"registro de 
+			   detalle","registros de detalle") &amp; ")" .</font></i><font color="#000000"> 
+			   Elimina también la etiqueta y el cuadro de texto de <b>Suma</b>.</font></font></font></li>
+               <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">En la sección de <b>Pie Proveedores.Nombre</b>, inserta:</font></font></font></li>
+                                                           
+          <ul>
+                 <li> <font face="Arial,Helvetica"><font size="-1"><font
+ color="#000000">Un               <b>cuadro de texto</b> con el título<b>
+   			  IVA</b> y escribe la fórmula para calcular el IVA del la suma del 
+				 Total de la factura&nbsp; ( </font><b><font color="#ff0000">
+				 =Suma([Total]) * 0.16</font></b><font color="#000000"> ).</font></font></font></li>
+                 <li> <font face="Arial,Helvetica"><font size="-1"><font
+ color="#000000">Un <b>cuadro de texto</b> con el título <b>TOTAL</b> 
+   			  y escribe la fórmula para calcular el Total a pagar de la 
+				 factura&nbsp;&nbsp; ( </font><b><font color="#ff0000">=Suma([Total]) * 
+				 1.16</font></b><font
+ color="#000000">&nbsp; ).</font></font></font></li>
+                                                           
+          </ul>
+               <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">Ajusta el tamaño y distribución de todos los controles (cuadros de 
+			   texto y etiquetas), de tal forma que se vean como se presenta en 
+			   la imagen.</font></font></font></li>
+               <li> <font face="Arial,Helvetica"><font size="-1">Alinea el 
+			   contenido de los cuadros de texto y etiquetas de la mejor forma 
+			   (izquierda / <strong>centrado</strong>   / derecha)</font></font></li>
+                                                 
+        </ul>
+                                       
+      </ul>
+                                                          
+      <center><img src="img8.gif">
+             </center>
+                                                          
+      <ul>
+                                                 
+        <ul>
+               <li> <font face="Arial,Helvetica"><font size="-1">Cambia el 
+			   diseño de tu informe. Puedes cambiar también el <b>color
+            </b>y el<b> tipo de letra</b> que más te agrade.</font></font></li>
+               <li> <font face="Arial,Helvetica"><font size="-1">Checa tu 
+			   informe, dando clic en <b>Ver &gt; Vista Informes.</b></font></font></li>
+                                                 
+        </ul>
+                                       
+      </ul>
+                                                          
+      <hr width="100%">                                                 
+      <blockquote><b><font face="Arial,Helvetica"><font color="#0000ff">&nbsp;5. 
+		  Consulta de Notas mensuales (Consulta con campos calculados)</font></font></b></blockquote>
+                                                          
+      <ul>
+                                                                       
+        <ul>
+        <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">La frutería y verdulería "La Huerta" necesita conocer las <strong>
+		Notas de venta</strong> que tiene mensualmente, por lo que se te pide 
+		crear una consulta donde se despliegue la información que se muestra en 
+		la imagen.</font></font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Crea un campo 
+		 calculado titulado <b>Total</b> donde realices la multiplicación de los 
+		 campos                 <b>Precio </b>por <b>Cantidad</b>.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Guarda la consulta 
+		 como              <b><font color="#3333ff">Notas mensuales</font></b></font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Checa los datos 
+		 resultados de tu consulta, dando clic en <b>Ver &gt; Vista Hoja de datos.</b></font></font><font
+ color="#ffffff">.</font>                            </li>
+                                                                       
+        </ul>
+                                    
+      </ul>
+                               
+      <blockquote>                                    
+        <blockquote><img src="img11.gif">
+            </blockquote>
+          </blockquote>
+                               
+      <ul>
+                                       
+        <p><b><font face="Arial,Helvetica"><font color="#0000ff">6. Informe de 
+		notas mensuales (Informe agrupado por fecha)</font></font></b> </p>
+                                                                     
+        <ul>
+        <li> <font face="Arial,Helvetica"><font size="-1">Utiliza la consulta de              <b><font color="#000000">
+		Notas mensuales</font></b> para generar un informe como se muestra en la 
+		imagen.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Agrupa la información 
+		 por el campo <b>Fecha</b>. Al agrupar es importante seleccionar el 
+		 botón de <b>opciones de agrupamiento</b> y decirle que muestre las<b> 
+		 fechas por mes.</b></font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Ordena la información 
+		 en forma ascendentemente por <b>Fecha. </b><font color="#000000">El 
+		 informe deberá realizar la suma del campo<b> Total</b></font></font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Distribución: 
+               <b>Esquema </b>y Orientación: <b>Horizontal</b></font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">El título del informe 
+		 deberá ser: <b><font color="#3366ff">Notas mensuales</font></b></font></font></li>
+         <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">Del menú, da clic en el botón de <b>Cerrar vista previa de impresión</b>, 
+		 para que muestre el informe en <b>Vista diseño</b>.</font></font></font></li>
+         <img src="img3.gif" height="69" width="100">
+        <br>
+    <li> <font face="Arial,Helvetica"><font size="-1">En la sección de <b><i>
+	Encabezado de página</i></b>, cambia el nombre de las etiquetas y ajusta su 
+	tamaño para que se vean como se muestra en la imagen.</font></font></li>
+         <li><font size="-1" face="Arial,Helvetica"><font
+ color="#000000">En la sección de <b>Pie Fecha </b>elimina la caja de texto<b> </b></font></font><font color="#3366ff"><i><font
+ face="Helvetica, Arial, sans-serif" size="-1"> 	="Resumir por " &amp; "'Fecha' = 
+		 " &amp; " " &amp; [Fecha] &amp; " (" &amp; Cuenta(*) &amp; " " &amp; 
+		 SiInm(Cuenta(*)=1,"registro de detalle","registros de detalle") &amp; ")"</font></i></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Alinea el contenido 
+		 de los cuadros de texto y etiquetas de la mejor forma (izquierda / <strong>
+		 centrado 
+  	</strong>/ derecha)</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Cambia el diseño de 
+		 tu informe. Puedes cambiar también el <b>color </b>y el<b> tipo de 
+		 letra</b> que más te agrade.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Checa tu informe, 
+		 dando clic en <b>Ver &gt; Vista Informes.</b><font color="#ffffff">.</font></font></font></li>
+                                                                       
+        </ul>
+&nbsp;</ul>
+        </td>
+        </tr>
+            <tr>
+      <td><img src="../Lab1/idisco.jpg" height="70" width="70" align="left">
+      <br>
+           <b><font face="Arial,Helvetica">&nbsp;<font color="#663366">&nbsp;Especificaciones 
+	  de entrega:</font></font></b> <br>
+      &nbsp;                                    
+      <ul>
+		  <ul>
+			  <li><font color="#000000" face="Arial,Helvetica" size="-1">Nombre 
+			  del entregable:<strong> LaHuertaC3_matricula.accdb </strong></font>
+			  </li>
+			  <li><font color="#000000" face="Arial,Helvetica" size="-1">Medio 
+			  de entrega:<strong> </strong>Se entrega en Canvas en la sección de
+			  <strong>Laboratorio: Consultas e informes 3</strong></font></li>
+		  </ul>
+	  </ul>
+	  <p><font color="#000000" face="Arial,Helvetica" size="-1"><strong>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="auto-style4">&nbsp; Instrucciones para 
+	  enviar tus archivos por Canvas:</span></strong></font></p>
+	  <ul>
+		  <ul>
+			  <li><font color="#000000" face="Arial,Helvetica" size="-1">Haz 
+			  clic en la actividad de <strong>Laboratorio: Consultas e informes 
+			  3</strong></font></li>
+			  <li><font color="#000000" face="Arial,Helvetica" size="-1">Haz 
+			  clic en el botón de <strong>Entregar tarea</strong>.</font></li>
+			  <li><font color="#000000" face="Arial,Helvetica" size="-1">En el 
+			  fólder de <strong>Carga del archivo</strong>, haz clic en el botón 
+			  de <strong>Examinar </strong>y localiza el archivo *.accdb.</font></li>
+			  <li><font color="#000000" face="Arial,Helvetica" size="-1">Cuando 
+			  hayas terminado de subir tus archivos, haz clic en el botón de
+			  <strong>Entregar tarea</strong> y listo!!</font></li>
+		  </ul>
+	  </ul>
+			</td>
+             </tr>
+                             
+  </tbody>       
+</table>
+       </center>
+         
+</body>
+</html>

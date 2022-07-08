@@ -1,0 +1,1032 @@
+﻿<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+                                
+ 
+    <meta content="es-mx" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>M_Semana1</title>
+                                         
+  <style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style1 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	border-style: solid;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style2 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style3 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	margin-left: 40px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  *{box-sizing:inherit}
+  
+
+
+
+
+
+
+
+
+
+
+  .auto-style4 {
+	color: #0000FF;
+}
+
+
+
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+  <body>
+   
+<center>  
+<table border="1" cols="1" width="100%">
+        <tbody>
+           <tr>
+        <td>                                                  
+      <table border="0" cols="2" width="100%">
+        <tbody>
+                 <tr>
+        <td width="55%">                                                
+                                           
+            <div align="right"><b><font face="Arial,Helvetica"><font
+ color="#663366"><font size="+1">Laboratorio 9. ACCESS Macros&nbsp;</font></font></font></b></div>
+        </td>
+         <td><img src="imageCNR.JPG" height="119" width="122">
+                   </td>
+        </tr>
+                                                                       
+        </tbody>                                                 
+      </table>
+        </td>
+        </tr>
+         <tr bgcolor="#663366">
+        <td>.</td>
+        </tr>
+         <tr>
+        <td><img src="iobj.jpg" height="70" width="70" align="left">
+        <br>
+             <b><font color="#663366" face="Arial,Helvetica">&nbsp; Objetivos:</font></b>
+          <br>
+        &nbsp;                                                  
+      <ul>
+               <font face="Arial,Helvetica"><font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#333333">El alumno será capaz de:</font></font></font>
+           <br>
+       		&nbsp;                                                           
+    
+        <ul>
+        <li> <font face="Arial,Helvetica"><font color="#333333"><font
+ size="-1">Crear macros</font></font></font></li>
+         <li> <font face="Arial,Helvetica"><font color="#333333"><font
+ size="-1">Asignar macros a botones</font></font></font></li>
+                                                                       
+        </ul>
+		</ul>
+        </td>
+        </tr>
+         <tr>
+        <td><img src="iinstruct.jpg" height="60" width="60" align="left">
+        <br>
+             <b><font face="Arial,Helvetica"><font color="#663366">&nbsp;&nbsp;&nbsp; Instrucciones:</font></font></b>        <br>
+        &nbsp;                                                  
+      <ul>
+                                                                       
+        <ul>
+        <li> <font face="Arial,Helvetica"><font color="#333333"><font
+ size="-1">Para realizar los laboratorios de macros necesitarás de la base de 
+		datos:             <b><u><a
+ href="LaHuertaM_matricula.accdb">LaHuertaM_matricula.accdb</a></u></b>.y de las 
+		siguientes imágenes: <b><u><a href="captura.png">captura.png</a></u></b>,
+                <b><u><a href="informe.jpg">informe.jpg</a></u> y <u><a
+ href="menu.jpg">menu.jpg</a></u></b></font></font></font></li>
+         <li> <font face="Arial,Helvetica"><font color="#333333"><font
+ size="-1">Realiza la lectura del <b><a
+ href="../Access_Capitulo7_Macros.docx">Capítulo 7. Macros</a></b></font></font></font></li>
+                                                                       
+        </ul>
+		</ul>
+        </td>
+        </tr>
+         <tr>
+        <td>                                                  
+      <p><big><b><font face="Arial,Helvetica"><font color="#3333ff"><font
+ size="-1"><big><br>
+      &nbsp;
+      1. Creación de macros para abrir formularios e informes</big></font></font></font></b>
+          </big></p>
+                                                       
+      <blockquote><font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">1. Crea las <b>macros para abrir los siguientes formularios</b>, con 
+		  la ventana <b>maximizada</b>, y guarda cada macro con el nombre 
+		  correspondiente:</font></font></font></blockquote>
+                                                          
+      <center>                                                 
+      <table class="auto-style1" style="width: 30%;" border="1">
+        <tbody>
+                 <tr bgcolor="#000066">
+        <td bgcolor="#663366">                                          
+                                                 
+            <center><b><font size="-1" color="#ffffff"
+ face="Arial,Helvetica">Formulario</font></b></center>
+        </td>
+         <td bgcolor="#663366">                                         
+                                                  
+            <center><b><font size="-1" color="#ffffff"
+ face="Arial,Helvetica">Nombre de la macro</font></b></center>
+        </td>
+        </tr>
+         <tr>
+        <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Clientes</font></td>
+         <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Abrir 
+		 clientes</font></td>
+        </tr>
+         		<tr>
+        <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Productos</font></td>
+         <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Abrir 
+		 productos</font></td>
+        		 </tr>
+         <tr>
+        <td class="auto-style2"><font size="-1" face="Arial,Helvetica">
+		Proveedores</font></td>
+         <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Abrir 
+		 proveedores</font></td>
+        </tr>
+                             <tr>
+        <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Notas de 
+		venta</font></td>
+         <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Abrir 
+		 notas</font></td>
+        		 </tr>
+      		   <tr>
+        <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Facturas 
+		de compra</font></td>
+         <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Abrir 
+		 facturas</font></td>
+        		 </tr>
+                                                                       
+        </tbody>                                                 
+      </table>
+             </center>
+                                                          
+      <blockquote><font face="Arial,Helvetica"><font size="-1">2. Crea las 
+		  macros para abrir los siguientes informes, con la ventana maximizada, 
+		  y guarda cada macro con el nombre correspondiente:</font></font></blockquote>
+                                                          
+      <center>                                                 
+      <table class="auto-style1" style="width: 30%;" border="1">
+        <tbody>
+                 <tr bgcolor="#000066">
+        <td bgcolor="#663366">                                          
+                                                 
+            <center><b><font size="-1" color="#ffffff"
+ face="Arial,Helvetica">Informe</font></b></center>
+        </td>
+         <td bgcolor="#663366">                                         
+                                                  
+            <center><b><font size="-1" color="#ffffff"
+ face="Arial,Helvetica">Nombre de la macro</font></b></center>
+        </td>
+        </tr>
+         <tr>
+        <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Clientes 
+		por ciudad</font></td>
+         <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Abrir 
+		 informe clientes</font></td>
+        </tr>
+         <tr>
+        <td class="auto-style2" style="height: 20px;">   <font size="-1"
+ face="Arial,Helvetica">Productos por clasificación</font></td>
+         <td class="auto-style2" style="height: 20px;">    <font
+ size="-1" face="Arial,Helvetica">Abrir informe productos</font></td>
+        </tr>
+         		<tr>
+        <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Notas de 
+		venta</font></td>
+         <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Abrir 
+		 informe notas</font></td>
+        		 </tr>
+      		   <tr>
+        <td class="auto-style2"><font size="-1" face="Arial,Helvetica">
+		Facturación</font></td>
+         <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Abrir 
+		 informe facturas</font></td>
+        		 </tr>
+      		   <tr>
+        <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Total de 
+		ventas por producto</font></td>
+         <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Abrir 
+		 informe ventas</font></td>
+        		 </tr>
+                                                                       
+        </tbody>                                                 
+      </table>
+             </center>
+                                                          
+      <p><big><b><font
+ size="-1" color="#3333ff" face="Arial,Helvetica"><big>&nbsp; 2. Creación de macro para salir de la base de datos</big></font></b>
+          </big></p>
+                                                       
+      <ul>
+        <li> <font face="Arial,Helvetica"><font size="-1">Crea una <b>macro para 
+		salir de la base de datos</b> (<b>QuitAccess</b>) y dale el nombre de <b>
+		Salir de la base de datos</b>.</font></font></li>
+                                                         
+      </ul>
+                                                          
+      <p><big><b><font size="-1" color="#3333ff" face="Arial,Helvetica"><big>&nbsp; 3. 
+	  Creación de los botones para cerrar formularios</big></font></b> 
+      </big></p>
+                                                       
+      <blockquote><font face="Arial,Helvetica"><font size="-1">1. Crea los 
+		  botones para cerrar los siguientes formularios: Clientes, Productos, 
+		  Proveedores, Notas de venta y Facturas de compra.</font></font>   
+      <br>
+               <font face="Arial,Helvetica"><font size="-1">2. Asigna al botón 
+		  de Salir&nbsp;<img src="imageMJL.JPG" height="21"
+ width="23">
+        		a cada formulario.</font></font></blockquote>
+                                                          
+      <blockquote>                                             
+        <ul>
+        <li> <font color="#ffffff">.</font><font face="Arial,Helvetica"><font
+ size="-1">Formulario<b> Clientes</b></font></font>                      
+                                          
+            <p><img src="img4.gif">
+                 </p>
+               </li>
+                                                 
+        </ul>
+           </blockquote>
+                                                                        
+   
+      <ul>
+                                                 
+        <ul>
+               <li> <font face="Arial,Helvetica"><font size="-1">Formulario<b> 
+  			 Productos</b></font></font></li>
+                                                 
+        </ul>
+         <br>
+                                                             
+        <ul>
+               <img src="img5.gif">
+        <br>
+                                                 
+        </ul>
+          &nbsp;                                              
+        <ul>
+               <li> <font size="-1" face="Arial,Helvetica">Formulario<b>
+			   Proveedores</b></font></li>
+               <br>
+               <font color="#ffffff"><img src="img8.gif"></font></ul><br>
+		  
+		  <ul>
+			  <li><font size="-1" face="Arial,Helvetica">Formulario<b> Notas de venta</b></font></li>
+     		  &nbsp; <br><img src="img7.jpg"> <br><br>
+		  </ul>
+		  <ul>
+			  <li><font size="-1" face="Arial,Helvetica">Formulario<b>
+			   Facturas de compra</b></font></li>
+               <font color="#ffffff">.</font> <br><img src="imgA.jpg">
+		  </ul>
+                                                                        
+  
+      </ul>
+                                                          
+      <table border="1" cols="1" width="80%" align="center">
+        <tbody>
+                 <tr>
+        <td width="80%">                                                
+                                           
+            <center><b><font face="Arial,Helvetica"><font
+ color="#ffffff"><font size="-1">.</font></font></font></b> <br>
+                   <font color="#663366"><big><b><font
+ face="Arial,Helvetica"><font size="-1"><big>EJEMPLO DE CÓMO INSERTAR UN BOTÓN 
+			EN EL FORMULARIO DE CLIENTES</big></font></font></b></big></font></center>
+                                                                        
+                           
+            <blockquote><font face="Arial,Helvetica"><font size="-1">1. Abre el 
+				formulario de <b>Clientes </b>en <b>Vista Diseño</b>.</font></font>
+                  <br>
+                     <font face="Arial,Helvetica"><font size="-1">2. En la 
+				sección de Detalle o en Encabezado del formulario, inserta un
+              <i>"<b>botón de comando"</b></i> con la <b>imagen de <i>"Salida"</i>.</b></font></font>                                   
+                                                                        
+              <blockquote> <li> <font face="Arial,Helvetica"><font
+ size="-1">Al insertar el botón, selecciona en la opción de 
+                     <b>Categoría &gt; Operaciones con formularios 
+                  </b>y en la opción de <b>Acciones &gt; Cerrar formulario</b>.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Da clic en el botón 
+		 de <b>Siguiente</b> y selecciona la <b>Imagen </b>de <b>"Salida"</b>.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Finalmente da clic en 
+		 el botón de <b>Finalizar </b>y listo.</font></font></li>
+        </blockquote>
+        </blockquote>
+                                                                        
+                           
+            <center><img src="img4.gif">
+                   </center>
+        </td>
+        </tr>
+                                                                       
+        </tbody>                                                 
+      </table>
+                                                          
+      <p><big><b><font size="-1" color="#3333ff" face="Arial,Helvetica"><big>&nbsp; 4. 
+	  Creación del menú de CAPTURA DE DATOS</big></font></b>   
+    </big></p>
+                                                       
+      <ul>
+        <li> <font face="Arial,Helvetica"><font size="-1">Crea un <b>nuevo 
+		formulario              </b>en<b> Vista Diseño</b>. Guarda el formulario 
+		con el nombre <b>MENU DE CAPTURA</b></font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Inserta una <b>
+		 Etiqueta 
+             </b>con el texto <b>CAPTURA DE DATOS</b>. Modifica el tamaño, color 
+		 y tipo de letra al que más te agrade.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Cambia el fondo del 
+		 formulario a <b>blanco </b>o el color que te agrade.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Inserta la imagen de            <b>
+		 captura.png </b>y acomódala en el lugar que más te agrade dentro del 
+		 formulario</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Asigna a cada botón 
+		 la macro correspondiente:</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Inserta cinco 
+		 botones. Modifica el tamaño, color y tipo de letra de los botones de 
+		 manera que se vean bien con el resto del formulario.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Asigna a cada botón 
+		 la macro correspondiente:</font></font></li>
+                                                         
+      </ul>
+                                                          
+      <center>                                                 
+      <table class="auto-style1" style="width: 30%;" border="1">
+        <tbody>
+                 <tr bgcolor="#000066">
+        <td bgcolor="#663366">                                          
+                                                 
+            <center><b><font size="-1" color="#ffffff"
+ face="Arial,Helvetica">Texto del botón</font></b></center>
+        </td>
+         <td bgcolor="#663366">                                         
+                                                  
+            <center><b><font size="-1" color="#ffffff"
+ face="Arial,Helvetica">Macro a asignar</font></b>              <br>
+                   <b><font size="-1" color="#ffffff"
+ face="Arial,Helvetica">(Al hacer clic...)</font></b></center>
+        </td>
+        </tr>
+         		<tr>
+        <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Registro 
+		de clientes</font></td>
+         <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Abrir 
+		 clientes</font></td>
+        		 </tr>
+      		   <tr>
+        <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Registro 
+		de productos</font></td>
+         <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Abrir 
+		 productos</font></td>
+        		 </tr>
+      		   <tr>
+        <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Registro 
+		de proveedores</font></td>
+         <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Abrir 
+		 proveedores</font></td>
+        		 </tr>
+         <tr>
+        <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Registro 
+		de notas</font></td>
+         <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Abrir 
+		 notas</font></td>
+        </tr>
+         <tr>
+        <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Registro 
+		de facturas</font></td>
+         <td class="auto-style2"><font size="-1" face="Arial,Helvetica">Abrir 
+		 facturas</font></td>
+        </tr>
+                                                                       
+        </tbody>                                                 
+      </table>
+             </center>
+                                                          
+      <center>                                                  
+      <p><img class="auto-style1" src="imgC.jpg">
+             </p>
+             </center>
+                                                          
+      <p><big><b><font
+ size="-1" color="#3333ff" face="Arial,Helvetica"><big>&nbsp; 5. Creación del menú de INFORMES</big></font></b>
+          </big></p>
+                                                       
+      <ul>
+        <li> <font face="Arial,Helvetica"><font size="-1">Crea un <b>nuevo 
+		formulario              </b>en <b>Vista Diseño</b>. Guarda el formulario 
+		con el nombre <b>MENU DE INFORMES</b></font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Inserta una <b>
+		 Etiqueta 
+             </b>con el texto de <b>INFORMES</b>. Modifica el tamaño, color y 
+		 tipo de letra al que más te agrade.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Cambia el fondo del 
+		 formulario a <b>blanco </b>o el color que te agrade.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Inserta la imagen de            <b>
+		 informe.jpg </b>y acomódala en el lugar que más te agrade dentro del 
+		 formulario</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Inserta tres botones. 
+		 Modifica el tamaño, color y tipo de letra de los botones de manera que 
+		 se vean bien con el resto del formulario.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Asigna a cada botón 
+		 la macro correspondiente:</font></font></li>
+                                       
+      </ul>
+       		                                     
+      <table class="auto-style1" style="width: 30%;" border="1"
+ align="center">
+     		  <tbody>
+     			  <tr bgcolor="#000066">
+     				  <td align="center" bgcolor="#663366"><b> 				  <font
+ size="-1" color="#ffffff" face="Arial,Helvetica">Texto del botón</font></b> 
+  				  </td>
+     				  <td bgcolor="#663366">                                        
+           
+            <center><b> 				  <font size="-1" color="#ffffff"
+ face="Arial,Helvetica">Macro a asignar (Al hacer clic...)</font></b></center>
+     				  </td>
+     			  </tr>
+     			  <tr>
+     				  <td class="auto-style2"> 				  <font size="-1"
+ face="Arial,Helvetica">Clientes por ciudad</font></td>
+     				  <td class="auto-style2"> 				  <font size="-1"
+ face="Arial,Helvetica">Abrir informe clientes</font></td>
+     			  </tr>
+     			  <tr>
+     				  <td class="auto-style2" style="height: 20px;"> 				  <font
+ size="-1" face="Arial,Helvetica">Productos</font></td>
+     				  <td class="auto-style2" style="height: 20px;"> 				  <font
+ size="-1" face="Arial,Helvetica">Abrir informe productos</font></td>
+     			  </tr>
+     			  <tr>
+     				  <td class="auto-style2"> 				  <font size="-1"
+ face="Arial,Helvetica">Notas de venta</font></td>
+     				  <td class="auto-style2"> 				  <font size="-1"
+ face="Arial,Helvetica">Abrir informe notas</font></td>
+     			  </tr>
+     			  <tr>
+     				  <td class="auto-style2"> 				  <font size="-1"
+ face="Arial,Helvetica">Facturación</font></td>
+     				  <td class="auto-style2"> 				  <font size="-1"
+ face="Arial,Helvetica">Abrir informe facturas</font></td>
+     			  </tr>
+     			  <tr>
+     				  <td class="auto-style2"> 				  <font size="-1"
+ face="Arial,Helvetica">Total de ventas</font></td>
+     				  <td class="auto-style2"> 				  <font size="-1"
+ face="Arial,Helvetica">Abrir informe ventas</font></td>
+     			  </tr>
+     		                                      
+        </tbody> 	                              
+      </table>
+             &nbsp;                                       
+      <center><img src="img4.jpg">
+     </center>
+                                                          
+      <p><big><b><font
+ size="-1" color="#3333ff" face="Arial,Helvetica"><big>&nbsp; 6. Creación de los botones para cerrar formularios de Menus</big></font></b></big></p>
+                                                       
+      <blockquote><font face="Arial,Helvetica"><font size="-1">1. Crea los 
+		  botones de Salir&nbsp;<img src="imageMJL.JPG" height="21" width="23">
+        		a los formularios: <b>MENU DE CAPTURA</b> y <b>MENU DE INFORMES</b>.</font></font>
+   		  <font size="-1" face="Arial,Helvetica">&nbsp;</font></blockquote>
+                                                          
+      <center>                                                  
+      <p>&nbsp;<font color="#ffffff">.<img class="auto-style1"
+ src="imgF.jpg" alt="" width="618" height="433" border="1">
+           </font>   </p>
+                                                       
+      <p><img src="img3.jpg">
+             </p>
+             </center>
+                                                          
+      <p><big><b><font
+ size="-1" color="#3333ff" face="Arial,Helvetica"><big>&nbsp; 7. Creación de macros para ABRIR formularios de MENUS</big></font></b>
+          </big></p>
+                                                       
+      <ul>
+             <li> <font face="Arial,Helvetica"><font color="#000000"><font
+ size="-1">Crea las <b>macros para abrir los siguientes formularios</b>, con la 
+			 ventana <b>maximizada</b> y con<b> modo de datos           </b>de<b> 
+  		   Sólo lectura</b> (Ya que no queremos que el usuario modifique los 
+			 menús), y guarda cada macro con el nombre correspondiente:</font></font></font></li>
+                                       
+      </ul>
+                                                          
+      <center>                                                 
+      <table border="1" width="30%">
+        <tbody>
+                 <tr bgcolor="#000066">
+        <td bgcolor="#663366">                                          
+                                                 
+            <center><b><font face="Arial,Helvetica"><font
+ color="#ffffff"><font size="-1">Formulario</font></font></font></b></center>
+        </td>
+         <td bgcolor="#663366">                                         
+                                                  
+            <center><b><font face="Arial,Helvetica"><font
+ color="#ffffff"><font size="-1">Nombre de la macro</font></font></font></b></center>
+        </td>
+        </tr>
+         <tr>
+        <td>                                                            
+                               
+            <center><font face="Arial,Helvetica"><font size="-1">MENU DE CAPTURA</font></font></center>
+        </td>
+         <td>                                                           
+                                
+            <center><font face="Arial,Helvetica"><font size="-1">Abrir captura</font></font></center>
+        </td>
+        </tr>
+         <tr>
+        <td>                                                            
+                               
+            <center><font face="Arial,Helvetica"><font size="-1">MENU DE 
+			INFORMES</font></font></center>
+        </td>
+         <td>                                                           
+                                
+            <center><font face="Arial,Helvetica"><font size="-1">Abrir informes</font></font></center>
+        </td>
+        </tr>
+                                                                       
+        </tbody>                                                 
+      </table>
+             </center>
+                                                          
+      <p><big><b><font
+ size="-1" color="#3333ff" face="Arial,Helvetica"><big>&nbsp; 8. Creación del menú principal</big></font></b>
+          </big></p>
+                                                       
+      <ul>
+        <li> <font face="Arial,Helvetica"><font size="-1">Crea un <b>nuevo 
+		formulario              </b>en<b> Vista Diseño</b>. Guarda el formulario 
+		con el nombre <b>MENU PRINCIPAL</b></font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Inserta una <b>
+		 Etiqueta 
+             </b>con el texto <b>Frutería y verdulería "La Huerta"</b>. Modifica 
+		 el tamaño, color y tipo de letra al que más te agrade.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Cambia el fondo del 
+		 formulario a <b>blanco </b>o el color que te agrade.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Inserta la imagen de            <b>
+		 menu.jpg </b>y acomódala en el lugar que más te agrade dentro del 
+		 formulario</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Inserta dos botones. 
+		 Modifica el tamaño, color y tipo de letra de los botones de manera que 
+		 se vean bien con el resto del formulario.</font></font></li>
+         <li> <font face="Arial,Helvetica"><font size="-1">Asigna a cada botón 
+		 la macro correspondiente:</font></font></li>
+                                                         
+      </ul>
+                                                          
+      <center>                                                 
+      <table border="1" width="30%">
+        <tbody>
+                 <tr bgcolor="#000066">
+        <td bgcolor="#663366">                                          
+                                                 
+            <center><b><font face="Arial,Helvetica"><font
+ color="#ffffff"><font size="-1">Texto del botón</font></font></font></b></center>
+        </td>
+         <td bgcolor="#663366">                                         
+                                                  
+            <center><b><font face="Arial,Helvetica"><font
+ color="#ffffff"><font size="-1">Macro a asignar</font></font></font></b>
+                <br>
+                   <b><font face="Arial,Helvetica"><font color="#ffffff"><font
+ size="-1">(Al hacer clic...)</font></font></font></b></center>
+        </td>
+        </tr>
+         <tr>
+        <td>                                                            
+                               
+            <center><font face="Arial,Helvetica"><font size="-1">Captura de 
+			datos</font></font></center>
+        </td>
+         <td>                                                           
+                                
+            <center><font face="Arial,Helvetica"><font size="-1">Abrir captura</font></font></center>
+        </td>
+        </tr>
+         <tr>
+        <td>                                                            
+                               
+            <center><font face="Arial,Helvetica"><font size="-1">Informes</font></font></center>
+        </td>
+         <td>                                                           
+                                
+            <center><font face="Arial,Helvetica"><font size="-1">Abrir informes</font></font></center>
+        </td>
+        </tr>
+                                                                       
+        </tbody>                                                 
+      </table>
+             </center>
+                                                          
+      <center>                                                  
+      <p><img class="auto-style1" src="img14.jpg">
+           </p>
+      	                                     
+             </center>
+                                                          
+      <p><big><b><font
+ size="-1" color="#3333ff" face="Arial,Helvetica"><big>&nbsp; 9. Creación del botón para SALIR DE LA BASE DE DATOS</big></font></b>       </big></p>
+                                                       
+      <ul>
+        <li> <font face="Arial,Helvetica"><font size="-1">En la parte inferior 
+		derecha del formulario, inserta un botón con la imagen de <b>Salir</b>
+   	 y asígnale la macro <b>Salir de la base de datos</b></font></font></li>
+                                                         
+      </ul>
+                                                          
+      <center><img class="auto-style1" src="img15.jpg">
+             </center>
+                                                          
+      <p><big><b><font
+ size="-1" color="#3333ff" face="Arial,Helvetica"><big>&nbsp; 10. Consulta que pida el valor del número de nota</big></font></b>
+          </big></p>
+                                                       
+      <p class="auto-style3"><font face="Arial,Helvetica"><font
+ size="-1">1. Abre la          <b>Consulta de notas</b>, dando doble clic sobre 
+	  esta.</font></font> <br>
+      	  <font face="Arial,Helvetica"><font size="-1">2. Abre la <b>Consulta de 
+	  notas</b> en vista diseño <b>Ver &gt; Vista diseño</b></font></font>
+   	  <br>
+           <font face="Arial,Helvetica"><font size="-1">3. stablece el criterio
+   	  <b>Como</b> adecuado para el campo <b>ID_Nota</b>, de manera que pida el 
+	  valor del <b>ID_Nota</b></font></font></p>
+        <font size="-1" face="Arial,Helvetica">                     
+               
+      <p><big><b><font size="-1" color="#3333ff"><big>&nbsp; 11. Consulta que pida el 
+	  valor del número de factura</big></font></b>   </big></p>
+                                           
+      <blockquote> 	  1. Abre la          <b>Consulta de facturas</b>, dando 
+		  doble clic sobre esta. <br>
+     	 2. Abre la  	  <b>Consulta de facturas</b> en vista diseño <b>Ver &gt; 
+		  Vista diseño</b> <br>
+     	 3. Establece el criterio          <b>Como</b> adecuado para el campo 
+        <b>ID_Factura</b>, de manera que pida el valor del <b>ID_Factura</b></blockquote>
+        </font>   <big><b>
+		<font size="-1" color="#3333ff" face="Arial,Helvetica"><big>&nbsp; 12. Creación de macro y botón en el 
+		formulario de "Notas de venta"</big></font></b></big>
+                                                    
+      <blockquote><font size="-1"><font face="Arial,Helvetica">1. Abre el 
+		  formulario de <b>Notas de venta</b>, dando doble clic sobre este</font></font>.<br>
+               <font face="Arial,Helvetica"><font size="-1">2. Abre el 
+		  formulario de <b>Notas de venta</b> en vista diseño <b>Ver &gt; Vista 
+		  diseño</b></font></font>
+            <br>
+               <font face="Arial,Helvetica"><font size="-1">3. Crea un botón 
+		  cuyo nombre deberá ser <b>Nota</b>.</font></font> <br>
+               <font face="Arial,Helvetica"><font size="-1">4. Asigna al botón 
+		  la macro: <b>Abrir informe notas</b>.</font></font> <br>
+               <font face="Arial,Helvetica"><font size="-1">5. Guarda tu 
+		  formulario y listo prueba tu botón!!.</font></font>          
+                                                     
+        <p><img src="img16.jpg">
+               </p>
+             </blockquote>
+                   <big><b><font size="-1" color="#3333ff"
+ face="Arial,Helvetica"><big>&nbsp; 13. Creación de macro y botón en el formulario de 
+		"Facturas de compra"</big></font></b></big>        
+                                         
+      <blockquote><font size="-1" face="Arial,Helvetica">1. Abre el formulario 
+		  de <b>Facturas de compra</b>, dando doble clic sobre este</font>       
+         <br>
+                <font size="-1" face="Arial,Helvetica">2. Abre el formulario de         <b>
+		  Facturas de compra </b> en vista diseño <b>Ver &gt; Vista diseño</b></font>          <br>
+                <font size="-1" face="Arial,Helvetica">3. Crea un botón cuyo 
+		  nombre deberá ser <b>Factura</b>.</font> <br>
+                <font size="-1" face="Arial,Helvetica">4. Asigna al botón la 
+		  macro: <b>Abrir informe facturas</b>.</font> <br>
+                <font size="-1" face="Arial,Helvetica">5. Guarda tu formulario y 
+		  listo prueba tu botón!!.</font>                            
+                                   
+        <p><img src="img17.jpg">
+               </p>
+             </blockquote>
+                                                          
+      <p><big><b><font size="-1" color="#3333ff" face="Arial,Helvetica"><big>&nbsp; 15. 
+	  Creación del menú ejecutable</big></font></b>        </big></p>
+                                                       
+      <ul>
+        <li> <font face="Arial,Helvetica"><font size="-1">Crea una macro llamada              <b>
+		AUTOEXEC</b> que al abrir la base de datos se <b>ejecute automáticamente 
+		el formulario del MENÚ PRINCIPAL.&nbsp;</b></font></font></li>
+         <br>
+               <font face="Arial,Helvetica"><font size="-1"><b>NOTA IMPORTANTE: 
+           </b>Revise las páginas 80, 81 y 82 del manual <b><font
+ color="#333333"><a href="../Access_Capitulo7_Macros.docx">Capítulo 7. Macros</a></font></b>, 
+		ahí encontrará las instrucciones para realizar la macro de <b>AUTOEXEC</b>.</font></font>             
+                                   
+      </ul>
+        <big><b><font
+ size="-1" color="#3333ff" face="Arial,Helvetica"><big>&nbsp; 16. Reducción del tamaño de la base de datos</big></font></b></big>
+                                                    
+      <ul>
+        <li> <font face="Arial,Helvetica"><font size="-1">Selecciona del menú              <b>
+		Herramientas de base de datos &gt; Compactar y reparar base de datos.</b></font></font></li>
+                                                         
+      </ul>
+                                                          
+      <blockquote><img src="img19.jpg">
+             </blockquote>
+                                                          
+      <ul>
+        <li> <font face="Arial,Helvetica"><font size="-1">Listo, habrás reducido 
+		el tamaño de tu base de datos.</font></font></li>
+                                                         
+      </ul>
+			 </td>
+        </tr>
+            <tr>
+      <td><img src="../Lab1/idisco.jpg" height="70" width="70" align="left">
+      <br>
+           <b><font face="Arial,Helvetica">&nbsp;<font color="#663366">&nbsp;Especificaciones 
+	  de entrega:</font></font></b> <br>
+      &nbsp;                                    
+      <ul>
+		  <ul>
+			  <li><font color="#000000" face="Arial,Helvetica" size="-1">Nombre 
+			  del entregable:<strong> LaHuerta_matricula.accdb </strong></font>
+			  </li>
+			  <li><font color="#000000" face="Arial,Helvetica" size="-1">Medio 
+			  de entrega:<strong> </strong>Se entrega en Canvas en la sección de
+			  <strong>Laboratorio: Macros</strong></font></li>
+		  </ul>
+	  </ul>
+	  <p><font color="#000000" face="Arial,Helvetica" size="-1"><strong>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="auto-style4">&nbsp; Instrucciones para 
+	  enviar tus archivos por Canvas:</span></strong></font></p>
+	  <ul>
+		  <ul>
+			  <li><font color="#000000" face="Arial,Helvetica" size="-1">Haz 
+			  clic en la actividad de <strong>Laboratorio: Macros</strong></font></li>
+			  <li><font color="#000000" face="Arial,Helvetica" size="-1">Haz 
+			  clic en el botón de <strong>Entregar tarea</strong>.</font></li>
+			  <li><font color="#000000" face="Arial,Helvetica" size="-1">En el 
+			  fólder de <strong>Carga del archivo</strong>, haz clic en el botón 
+			  de <strong>Examinar </strong>y localiza el archivo *.accdb.</font></li>
+			  <li><font color="#000000" face="Arial,Helvetica" size="-1">Cuando 
+			  hayas terminado de subir tus archivos, haz clic en el botón de
+			  <strong>Entregar tarea</strong> y listo!!</font></li>
+		  </ul>
+	  </ul>
+			</td>
+             </tr>
+                             
+  </tbody>       
+</table>
+       </center>
+</body>
+</html>
